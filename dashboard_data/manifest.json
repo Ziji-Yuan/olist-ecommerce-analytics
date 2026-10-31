@@ -1,0 +1,18 @@
+{
+  "commercial_first_date": "2018-01-05",
+  "commercial_latest_date": "2018-08-31",
+  "commercial_dates": 239,
+  "operational_first_date": "2017-01-18",
+  "operational_latest_date": "2018-08-31",
+  "operational_dates": 591,
+  "driver_rows": 5740,
+  "dimensional_rows": 671044,
+  "source_objects": [
+    "daily_diagnostic_comparison",
+    "placed_gmv_daily_monitoring",
+    "driver_attribution_long",
+    "dimensional_rca_long",
+    "operational_health_7d",
+    "operational_duration_coverage_summary"
+  ]
+}
