@@ -1,18 +1,49 @@
-# Olist E-Commerce Analytics & Business Performance Monitoring
+<p align="center">🌊  ·  🛒  ·  📊  ·  🔎  ·  🌊</p>
 
-### From nine raw marketplace tables to KPI governance, anomaly detection, root-cause analysis, and an interactive decision dashboard
+<h1 align="center">Olist E-Commerce Analytics</h1>
 
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.40%2B-FF4B4B?logo=streamlit&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-6.x-3F4F75?logo=plotly&logoColor=white)
-![Status](https://img.shields.io/badge/status-historical%20offline%20monitoring-0f766e)
+<p align="center"><strong>Business Performance Monitoring · Anomaly Detection · Root-Cause Analysis</strong></p>
+
+<p align="center">
+  An end-to-end analytics system that turns fragmented marketplace transactions into governed KPIs,<br>
+  historical performance signals, diagnostic explanations, and an interactive decision dashboard.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white" alt="Python 3.11">
+  <img src="https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas&logoColor=white" alt="Pandas 2.x">
+  <img src="https://img.shields.io/badge/Streamlit-1.40%2B-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit 1.40+">
+  <img src="https://img.shields.io/badge/Plotly-6.x-3F4F75?logo=plotly&logoColor=white" alt="Plotly 6.x">
+  <img src="https://img.shields.io/badge/status-historical%20offline%20monitoring-0f766e" alt="Historical offline monitoring">
+</p>
+
+<p align="center">
+  <a href="#executive-overview">Executive overview</a> ·
+  <a href="#dataset--data-architecture">Data architecture</a> ·
+  <a href="#end-to-end-analytics-workflow">Workflow</a> ·
+  <a href="#kpi-framework">KPI framework</a> ·
+  <a href="#dashboard--visual-analytics">Dashboard</a> ·
+  <a href="#how-to-reproduce">Reproduce</a>
+</p>
+
+<h3 align="center">Project journey</h3>
+
+<table>
+  <tr>
+    <td align="center" width="16%"><b>🗂️ 01 · Integrate</b><br><sub>9 marketplace tables<br>1.55M source rows</sub></td>
+    <td align="center" width="16%"><b>🧹 02 · Govern</b><br><sub>Schema, keys, grain<br>and quality rules</sub></td>
+    <td align="center" width="16%"><b>📈 03 · Measure</b><br><sub>604-day mart<br>29 KPI fields</sub></td>
+    <td align="center" width="16%"><b>🚨 04 · Monitor</b><br><sub>Leak-free STL<br>and Robust Z</sub></td>
+    <td align="center" width="16%"><b>🔎 05 · Diagnose</b><br><sub>Metric tree, state<br>and category RCA</sub></td>
+    <td align="center" width="16%"><b>🖥️ 06 · Deliver</b><br><sub>Point-in-time<br>Streamlit dashboard</sub></td>
+  </tr>
+</table>
+
+<p align="center"><code>Raw transactions → governed metrics → anomaly signal → business diagnosis → decision dashboard</code></p>
 
 An end-to-end analytics product that integrates Olist marketplace transactions into a **604-day commercial mart**, detects unusual GMV movements without look-ahead, decomposes changes through a governed metric tree, localizes concentration by state and category, and presents the results in a point-in-time Streamlit dashboard.
 
 > **Delivery status:** the pipeline, prepared outputs, and dashboard are implemented. The source is a historical public dataset; there is no live warehouse, scheduler, or production data feed.
-
-[Executive overview](#executive-overview) · [Data architecture](#dataset--data-architecture) · [Workflow](#end-to-end-analytics-workflow) · [KPI framework](#kpi-framework) · [Dashboard](#dashboard--visual-analytics) · [Monitoring](#monitoring--diagnostic-framework) · [Reproduce](#how-to-reproduce)
 
 ![Olist monitoring dashboard](docs/images/dashboard-preview.png)
 
@@ -246,8 +277,8 @@ Detailed design notes: [architecture](docs/architecture.md) · [methodology](doc
 ## How to reproduce
 
 ```bash
-git clone https://github.com/Ziji-Yuan/olist-ecommerce-analytics-monitoring.git
-cd olist-ecommerce-analytics-monitoring
+git clone https://github.com/Ziji-Yuan/olist-ecommerce-analytics.git
+cd olist-ecommerce-analytics
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
